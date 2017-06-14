@@ -33,7 +33,8 @@
 					"loginPageHeader",
 					"userName",
 					"password",
-					"loginButton",
+					"loginbutton",
+					"fbLoginbutton",
 					"loginPageFooter"
 				],
 				"flexProps": {
@@ -45,7 +46,7 @@
 					"justifyContent": "SPACE_AROUND"
 				},
 				"parent": null,
-				"name": "loginPageTemplate",
+				"name": "loginPageWithFacebook",
 				"layout": {
 					"width": 187.5,
 					"height": 333.5,
@@ -80,7 +81,7 @@
 				"color": "#00A1F1",
 				"visible": true,
 				"children": [],
-				"parent": "loginPageTemplate",
+				"parent": "loginPageWithFacebook",
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
@@ -112,7 +113,7 @@
 				"visible": false,
 				"backgroundColor": "#FFFFFF",
 				"children": [],
-				"parent": "loginPageTemplate",
+				"parent": "loginPageWithFacebook",
 				"isRemovable": false,
 				"name": "headerBar",
 				"layout": {
@@ -170,7 +171,7 @@
 					"flexGrow": null
 				},
 				"name": "loginPageHeader",
-				"parent": "loginPageTemplate",
+				"parent": "loginPageWithFacebook",
 				"layout": {
 					"height": 250,
 					"borderWidth": 0
@@ -331,7 +332,7 @@
 					"flexGrow": null
 				},
 				"name": "userName",
-				"parent": "loginPageTemplate",
+				"parent": "loginPageWithFacebook",
 				"layout": {
 					"height": 65,
 					"borderWidth": 0
@@ -566,7 +567,7 @@
 					"bottom": 30
 				},
 				"name": "password",
-				"parent": "loginPageTemplate",
+				"parent": "loginPageWithFacebook",
 				"layout": {
 					"top": -10,
 					"width": 335,
@@ -678,6 +679,7 @@
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"textAlignment": "MIDLEFT",
 				"top": null,
+				"isPassword": true,
 				"children": [],
 				"font": {
 					"size": 16,
@@ -698,8 +700,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"isPassword": true
+				}
 			}
 		},
 		{
@@ -757,62 +758,6 @@
 			}
 		},
 		{
-			"type": "Button",
-			"id": "2865494e",
-			"themeProps": {},
-			"userProps": {
-				"backgroundColor": "rgba( 54, 134, 255, 1 )",
-				"width": null,
-				"text": "Login",
-				"flexProps": {
-					"flexGrow": null
-				},
-				"font": {
-					"family": "Nunito",
-					"bold": true
-				},
-				"layout": {},
-				"flex": {},
-				"defaults": {}
-			},
-			"className": ".button",
-			"props": {
-				"width": null,
-				"height": 70,
-				"touchEnabled": true,
-				"text": "Login",
-				"visible": true,
-				"backgroundColor": "rgba( 54, 134, 255, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#FFFFFF",
-				"textAlignment": "MIDCENTER",
-				"children": [],
-				"font": {
-					"size": 16,
-					"bold": true,
-					"italic": false,
-					"family": "Nunito"
-				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "AUTO",
-					"flexGrow": null
-				},
-				"name": "loginButton",
-				"parent": "loginPageTemplate",
-				"layout": {
-					"height": 70,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
-			}
-		},
-		{
 			"type": "FlexLayout",
 			"id": "0335728c",
 			"themeProps": {},
@@ -855,7 +800,7 @@
 					"positionType": "RELATIVE"
 				},
 				"name": "loginPageFooter",
-				"parent": "loginPageTemplate",
+				"parent": "loginPageWithFacebook",
 				"layout": {
 					"width": 334,
 					"height": 101.91134643554688,
@@ -1052,6 +997,120 @@
 				"flex": {
 					"alignSelf": 3,
 					"positionType": 0
+				}
+			}
+		},
+		{
+			"type": "Button",
+			"id": "1de2cd49",
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 54, 134, 255, 1 )",
+				"width": null,
+				"text": "Login",
+				"height": 58,
+				"flexProps": {
+					"flexGrow": null
+				},
+				"font": {
+					"family": "Nunito",
+					"bold": true
+				},
+				"layout": {},
+				"flex": {},
+				"defaults": {}
+			},
+			"className": ".button",
+			"props": {
+				"width": null,
+				"height": 58,
+				"touchEnabled": true,
+				"text": "Login",
+				"visible": true,
+				"backgroundColor": "rgba( 54, 134, 255, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"children": [],
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "Nunito"
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": null
+				},
+				"name": "loginbutton",
+				"parent": "loginPageWithFacebook",
+				"layout": {
+					"height": 58,
+					"borderWidth": 0
+				},
+				"flex": {
+					"positionType": 0,
+					"flexGrow": null
+				}
+			}
+		},
+		{
+			"type": "Button",
+			"id": "772e3345",
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 54, 134, 255, 1 )",
+				"width": null,
+				"text": "Login with Facebook",
+				"height": 58,
+				"flexProps": {
+					"flexGrow": null
+				},
+				"font": {
+					"family": "Nunito",
+					"bold": true
+				},
+				"layout": {},
+				"flex": {},
+				"defaults": {}
+			},
+			"className": ".button",
+			"props": {
+				"width": null,
+				"height": 58,
+				"touchEnabled": true,
+				"text": "Login with Facebook",
+				"visible": true,
+				"backgroundColor": "rgba( 54, 134, 255, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"children": [],
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "Nunito"
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": null
+				},
+				"name": "fbLoginbutton",
+				"parent": "loginPageWithFacebook",
+				"layout": {
+					"height": 58,
+					"borderWidth": 0
+				},
+				"flex": {
+					"positionType": 0,
+					"flexGrow": null
 				}
 			}
 		}

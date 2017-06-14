@@ -1,6 +1,7 @@
 {
-  "name": "Login Page",
+  "name": "loginPage",
+  "title": "Login Page",
   "description": "Login page",
   "tags": [],
-  "version": "1.0.2"
+  "version": "1.0.0",
 }

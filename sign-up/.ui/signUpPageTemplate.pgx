@@ -30,6 +30,9 @@
 				"paddingLeft": 20,
 				"paddingRight": 20,
 				"paddingBottom": null,
+				"paddingTop": 20,
+				"left": null,
+				"top": null,
 				"children": [
 					"statusBar",
 					"headerBar",
@@ -52,8 +55,6 @@
 				"parent": null,
 				"name": "signUpPageTemplate",
 				"layout": {
-					"left": null,
-					"top": null,
 					"width": 93.75,
 					"height": 166.75,
 					"paddingLeft": 10,
@@ -69,10 +70,7 @@
 				},
 				"font": {},
 				"width": 187.5,
-				"height": 333.5,
-				"paddingTop": 20,
-				"left": null,
-				"top": null
+				"height": 333.5
 			}
 		},
 		{
@@ -166,6 +164,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"right": null,
+				"maxHeight": null,
 				"children": [
 					"headerIcon",
 					"imageview1"
@@ -195,8 +194,7 @@
 					"positionType": 0,
 					"flexGrow": 3
 				},
-				"font": {},
-				"maxHeight": null
+				"font": {}
 			}
 		},
 		{
@@ -291,6 +289,9 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"minHeight": null,
+				"marginTop": 10,
+				"paddingBottom": 4,
 				"children": [
 					"userNameLbl",
 					"userNameText",
@@ -324,10 +325,7 @@
 					"positionType": 0,
 					"flexGrow": 2
 				},
-				"font": {},
-				"minHeight": null,
-				"marginTop": 10,
-				"paddingBottom": 4
+				"font": {}
 			}
 		},
 		{
@@ -471,6 +469,7 @@
 				"alpha": 1,
 				"borderColor": "rgba( 226, 226, 226, 1 )",
 				"borderWidth": 1,
+				"bottom": null,
 				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -496,8 +495,7 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {},
-				"bottom": null
+				"font": {}
 			}
 		},
 		{
@@ -533,6 +531,7 @@
 				"borderWidth": 0,
 				"bottom": null,
 				"top": null,
+				"minHeight": null,
 				"children": [
 					"passwordLbl",
 					"passwordText",
@@ -565,8 +564,7 @@
 					"flexGrow": 2,
 					"bottom": 30
 				},
-				"font": {},
-				"minHeight": null
+				"font": {}
 			}
 		},
 		{
@@ -770,6 +768,8 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"minHeight": null,
+				"maxHeight": null,
 				"children": [
 					"footerText",
 					"footerSignupLbl"
@@ -799,9 +799,7 @@
 					"positionType": 0,
 					"flexGrow": 2
 				},
-				"font": {},
-				"minHeight": null,
-				"maxHeight": null
+				"font": {}
 			}
 		},
 		{
@@ -958,6 +956,8 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
+				"minHeight": 30,
+				"maxHeight": 60,
 				"children": [],
 				"font": {
 					"size": 16,
@@ -980,9 +980,7 @@
 				"flex": {
 					"positionType": 0,
 					"flexGrow": 1
-				},
-				"minHeight": 30,
-				"maxHeight": 60
+				}
 			}
 		},
 		{
@@ -991,8 +989,8 @@
 			"themeProps": {},
 			"userProps": {
 				"image": "sing-up-head-image.png",
-				"width": 335,
-				"height": 283.73388671875,
+				"width": null,
+				"height": null,
 				"imageFillType": "ASPECTFIT",
 				"flexProps": {
 					"flexGrow": 3,
@@ -1003,14 +1001,8 @@
 				"font": {},
 				"defaults": {}
 			},
+			"className": ".imageView",
 			"props": {
-				"name": "imageview1",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "STRETCH",
-					"positionType": "RELATIVE",
-					"flexGrow": 3
-				},
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
@@ -1020,19 +1012,25 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
+				"image": "sing-up-head-image.png",
+				"children": [],
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"flexGrow": 3
+				},
+				"name": "imageview1",
+				"parent": "signUpPageHeader",
+				"layout": {
+					"borderWidth": 0
+				},
 				"flex": {
 					"alignSelf": 4,
 					"positionType": 0,
 					"flexGrow": 3
 				},
-				"parent": "signUpPageHeader",
-				"children": [],
-				"layout": {
-					"borderWidth": 0
-				},
-				"image": "sing-up-head-image.png",
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/sing-up-head-image.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"font": {},
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/sing-up-head-image.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.3504831968059028"
 			}
 		},
 		{
@@ -1068,6 +1066,10 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"minHeight": 20,
+				"marginTop": null,
+				"paddingBottom": null,
+				"maxHeight": 70,
 				"children": [
 					"emailLbl",
 					"emailText",
@@ -1101,11 +1103,7 @@
 					"positionType": 0,
 					"flexGrow": 1.2
 				},
-				"font": {},
-				"minHeight": 20,
-				"marginTop": null,
-				"paddingBottom": null,
-				"maxHeight": 70
+				"font": {}
 			}
 		},
 		{
@@ -1251,6 +1249,7 @@
 				"alpha": 1,
 				"borderColor": "rgba( 226, 226, 226, 1 )",
 				"borderWidth": 1,
+				"bottom": null,
 				"children": [],
 				"flexProps": {
 					"alignSelf": "STRETCH",
@@ -1277,8 +1276,7 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {},
-				"bottom": null
+				"font": {}
 			}
 		},
 		{
@@ -1314,6 +1312,10 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"minHeight": 20,
+				"marginTop": null,
+				"paddingBottom": null,
+				"maxHeight": 70,
 				"children": [
 					"birthdayLbl",
 					"birthdayText",
@@ -1347,11 +1349,7 @@
 					"positionType": 0,
 					"flexGrow": 1.2
 				},
-				"font": {},
-				"minHeight": 20,
-				"marginTop": null,
-				"paddingBottom": null,
-				"maxHeight": 70
+				"font": {}
 			}
 		},
 		{
@@ -1497,6 +1495,7 @@
 				"alpha": 1,
 				"borderColor": "rgba( 226, 226, 226, 1 )",
 				"borderWidth": 1,
+				"bottom": null,
 				"children": [],
 				"flexProps": {
 					"alignSelf": "STRETCH",
@@ -1523,8 +1522,7 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {},
-				"bottom": null
+				"font": {}
 			}
 		}
 	]

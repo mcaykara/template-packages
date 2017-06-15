@@ -1,7 +1,10 @@
 {
-  "name": "loginPage",
+  "name": "loginPageTemplate",
   "title": "Login Page",
   "description": "Login page",
   "tags": [],
-  "version": "1.0.0",
+  "resources": {
+    "fonts": ["Nunito"]
+  },
+  "version": "1.0.0"
 }

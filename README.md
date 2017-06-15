@@ -6,4 +6,4 @@ Smartface UI-Editor template packages
   . link.sh login-page
 ```
 
-Creates symlink as workspace from specified package for example login-page
+Creates symlink as the workspace from specified package for example login-page

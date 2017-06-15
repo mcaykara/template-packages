@@ -988,7 +988,7 @@
 			"id": "9a5266eb",
 			"themeProps": {},
 			"userProps": {
-				"image": "sing-up-head-image.png",
+				"image": "sing_up_head_image.png",
 				"width": null,
 				"height": null,
 				"imageFillType": "ASPECTFIT",
@@ -1012,7 +1012,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"image": "sing-up-head-image.png",
+				"image": "sing_up_head_image.png",
 				"children": [],
 				"flexProps": {
 					"alignSelf": "STRETCH",
@@ -1030,7 +1030,7 @@
 					"flexGrow": 3
 				},
 				"font": {},
-				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/sing-up-head-image.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.3504831968059028"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/sing_up_head_image.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.1615476709317174"
 			}
 		},
 		{

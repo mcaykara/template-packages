@@ -1,7 +1,7 @@
 # template-packages
 Smartface UI-Editor template packages
 
-_to use development _
+to use template development is like below.
 ```sh
   . link.sh login-page
 ```

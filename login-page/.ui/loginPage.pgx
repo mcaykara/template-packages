@@ -45,7 +45,7 @@
 					"justifyContent": "SPACE_AROUND"
 				},
 				"parent": null,
-				"name": "loginPageTemplate",
+				"name": "loginPage",
 				"layout": {
 					"width": 93.75,
 					"height": 166.75,
@@ -80,7 +80,7 @@
 				"color": "#00A1F1",
 				"visible": true,
 				"children": [],
-				"parent": "loginPageTemplate",
+				"parent": "loginPage",
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
@@ -112,7 +112,7 @@
 				"visible": false,
 				"backgroundColor": "#FFFFFF",
 				"children": [],
-				"parent": "loginPageTemplate",
+				"parent": "loginPage",
 				"isRemovable": false,
 				"name": "headerBar",
 				"layout": {
@@ -170,7 +170,7 @@
 					"flexGrow": null
 				},
 				"name": "loginPageHeader",
-				"parent": "loginPageTemplate",
+				"parent": "loginPage",
 				"layout": {
 					"height": 125,
 					"borderWidth": 0
@@ -331,7 +331,7 @@
 					"flexGrow": null
 				},
 				"name": "userName",
-				"parent": "loginPageTemplate",
+				"parent": "loginPage",
 				"layout": {
 					"height": 32.5,
 					"borderWidth": 0
@@ -566,7 +566,7 @@
 					"bottom": 30
 				},
 				"name": "password",
-				"parent": "loginPageTemplate",
+				"parent": "loginPage",
 				"layout": {
 					"top": -5,
 					"width": 167.5,
@@ -801,7 +801,7 @@
 					"flexGrow": null
 				},
 				"name": "loginButton",
-				"parent": "loginPageTemplate",
+				"parent": "loginPage",
 				"layout": {
 					"height": 35,
 					"borderWidth": 0
@@ -855,7 +855,7 @@
 					"positionType": "RELATIVE"
 				},
 				"name": "loginPageFooter",
-				"parent": "loginPageTemplate",
+				"parent": "loginPage",
 				"layout": {
 					"width": 167,
 					"height": 50.95567321777344,

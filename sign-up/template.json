@@ -1,7 +1,7 @@
 {
-  "name": "signUpPageTemplate",
-  "title": "Sign-up page",
-  "description": "Sign-up page template",
+  "name": "registrationPage",
+  "title": "Registration page",
+  "description": "Registration page",
   "tags": [],
   "resources": {
     "fonts": ["Nunito"],

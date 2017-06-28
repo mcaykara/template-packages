@@ -46,7 +46,7 @@
 					"justifyContent": "SPACE_AROUND"
 				},
 				"parent": null,
-				"name": "loginPageWithFacebook",
+				"name": "loginPageFB",
 				"layout": {
 					"width": 187.5,
 					"height": 333.5,
@@ -81,7 +81,7 @@
 				"color": "#00A1F1",
 				"visible": true,
 				"children": [],
-				"parent": "loginPageWithFacebook",
+				"parent": "loginPageFB",
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
@@ -113,7 +113,7 @@
 				"visible": false,
 				"backgroundColor": "#FFFFFF",
 				"children": [],
-				"parent": "loginPageWithFacebook",
+				"parent": "loginPageFB",
 				"isRemovable": false,
 				"name": "headerBar",
 				"layout": {
@@ -171,7 +171,7 @@
 					"flexGrow": null
 				},
 				"name": "loginPageHeader",
-				"parent": "loginPageWithFacebook",
+				"parent": "loginPageFB",
 				"layout": {
 					"height": 250,
 					"borderWidth": 0
@@ -332,7 +332,7 @@
 					"flexGrow": null
 				},
 				"name": "userName",
-				"parent": "loginPageWithFacebook",
+				"parent": "loginPageFB",
 				"layout": {
 					"height": 65,
 					"borderWidth": 0
@@ -567,7 +567,7 @@
 					"bottom": 30
 				},
 				"name": "password",
-				"parent": "loginPageWithFacebook",
+				"parent": "loginPageFB",
 				"layout": {
 					"top": -10,
 					"width": 335,
@@ -800,7 +800,7 @@
 					"positionType": "RELATIVE"
 				},
 				"name": "loginPageFooter",
-				"parent": "loginPageWithFacebook",
+				"parent": "loginPageFB",
 				"layout": {
 					"width": 334,
 					"height": 101.91134643554688,
@@ -1046,7 +1046,7 @@
 					"flexGrow": null
 				},
 				"name": "loginbutton",
-				"parent": "loginPageWithFacebook",
+				"parent": "loginPageFB",
 				"layout": {
 					"height": 58,
 					"borderWidth": 0
@@ -1103,7 +1103,7 @@
 					"flexGrow": null
 				},
 				"name": "fbLoginbutton",
-				"parent": "loginPageWithFacebook",
+				"parent": "loginPageFB",
 				"layout": {
 					"height": 58,
 					"borderWidth": 0

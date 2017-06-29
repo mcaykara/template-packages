@@ -1,0 +1,229 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "9e906df0",
+			"themeProps": {},
+			"userProps": {
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
+			},
+			"className": ".page",
+			"version": "6.3.19",
+			"props": {
+				"backgroundColor": "#EEEEEE",
+				"orientation": "PORTRAIT",
+				"children": [
+					"statusBar",
+					"headerBar",
+					"mapview",
+					"locationIcon"
+				],
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"parent": null,
+				"name": "mapPage",
+				"layout": {
+					"width": 375,
+					"height": 624.5999999999999
+				},
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"flexDirection": 0,
+					"flexWrap": 0,
+					"justifyContent": 0
+				},
+				"font": {},
+				"width": 375,
+				"height": 603
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "a80b2b6a",
+			"themeProps": {},
+			"userProps": {
+				"color": "rgba( 55, 134, 255, 1 )",
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
+			},
+			"className": ".statusBar",
+			"props": {
+				"color": "rgba( 55, 134, 255, 1 )",
+				"visible": true,
+				"children": [],
+				"parent": "mapPage",
+				"isRemovable": false,
+				"name": "statusBar",
+				"layout": {
+					"height": 20
+				},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"height": 20
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "191ebe9e",
+			"themeProps": {},
+			"userProps": {
+				"title": "Map",
+				"backgroundColor": "rgba( 55, 134, 255, 1 )",
+				"titleColor": "rgba( 255, 255, 255, 1 )",
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "Map",
+				"titleColor": "rgba( 255, 255, 255, 1 )",
+				"visible": true,
+				"backgroundColor": "rgba( 55, 134, 255, 1 )",
+				"children": [],
+				"parent": "mapPage",
+				"isRemovable": false,
+				"name": "headerBar",
+				"layout": {
+					"height": 44
+				},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"height": 44
+			}
+		},
+		{
+			"type": "MapView",
+			"id": "56b4f96f",
+			"themeProps": {},
+			"userProps": {
+				"left": 0,
+				"right": 0,
+				"width": null,
+				"height": null,
+				"top": 0,
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".mapView",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"rotateEnabled": true,
+				"compassEnabled": true,
+				"scrollEnabled": true,
+				"type": "NORMAL",
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"children": [],
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"bottom": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
+				},
+				"name": "mapview",
+				"parent": "mapPage",
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"top": 0,
+					"borderWidth": 0
+				},
+				"flex": {
+					"positionType": 1,
+					"right": 0,
+					"bottom": 0
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "4263a0ec",
+			"themeProps": {},
+			"userProps": {
+				"image": "currentLocation.png",
+				"right": 0,
+				"bottom": 0,
+				"width": 200,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 200,
+				"height": 200,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "NORMAL",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"children": [],
+				"image": "currentLocation.png",
+				"right": 0,
+				"bottom": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE"
+				},
+				"name": "locationIcon",
+				"parent": "mapPage",
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"width": 200,
+					"height": 200,
+					"borderWidth": 0
+				},
+				"flex": {
+					"positionType": 1
+				},
+				"font": {},
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/currentLocation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207?random=0.444163231192946"
+			}
+		}
+	]
+}

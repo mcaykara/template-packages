@@ -5,10 +5,13 @@
 			"id": "9e906df0",
 			"themeProps": {},
 			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexWrap": "WRAP"
+				},
 				"layout": {},
 				"flex": {},
 				"font": {},
-				"flexProps": {},
 				"defaults": {}
 			},
 			"className": ".page",
@@ -19,15 +22,17 @@
 				"children": [
 					"statusBar",
 					"headerBar",
-					"mapview",
-					"locationIcon"
+					"mapContainer",
+					"leftSpace",
+					"tools",
+					"rightSpage"
 				],
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
 					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"flexWrap": "WRAP",
 					"justifyContent": "FLEX_START"
 				},
 				"parent": null,
@@ -39,8 +44,8 @@
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
-					"flexDirection": 0,
-					"flexWrap": 0,
+					"flexDirection": 2,
+					"flexWrap": 1,
 					"justifyContent": 0
 				},
 				"font": {},
@@ -51,6 +56,7 @@
 		{
 			"type": "StatusBar",
 			"id": "a80b2b6a",
+			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"color": "rgba( 55, 134, 255, 1 )",
@@ -80,6 +86,7 @@
 		{
 			"type": "HeaderBar",
 			"id": "191ebe9e",
+			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"title": "Map",
@@ -111,8 +118,401 @@
 			}
 		},
 		{
+			"type": "FlexLayout",
+			"id": "6be20ec0",
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"left": null,
+				"top": null,
+				"width": null,
+				"height": null,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"right": null,
+				"bottom": null,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"right": 0,
+					"bottom": 0,
+					"flexGrow": 2,
+					"alignSelf": "STRETCH",
+					"flexDirection": "COLUMN",
+					"justifyContent": "FLEX_START",
+					"alignContent": "FLEX_START",
+					"alignItems": "FLEX_START"
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": null,
+				"top": null,
+				"right": null,
+				"bottom": null,
+				"children": [
+					"topSpace",
+					"locationIcon"
+				],
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "FLEX_START",
+					"alignItems": "FLEX_START",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"right": 0,
+					"bottom": 0,
+					"flexGrow": 2
+				},
+				"name": "tools",
+				"parent": "mapPage",
+				"layout": {
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignSelf": 4,
+					"alignContent": 1,
+					"alignItems": 1,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"right": 0,
+					"bottom": 0,
+					"flexGrow": 2
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "6503e2fc",
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"image": "currentLocation.png",
+				"right": null,
+				"bottom": null,
+				"width": null,
+				"left": null,
+				"top": null,
+				"height": null,
+				"imageFillType": "ASPECTFIT",
+				"marginRight": 0,
+				"marginBottom": 0,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"right": 0,
+					"bottom": 0,
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"image": "currentLocation.png",
+				"right": null,
+				"bottom": null,
+				"left": null,
+				"top": null,
+				"marginRight": 0,
+				"marginBottom": 0,
+				"children": [],
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"right": 0,
+					"bottom": 0,
+					"flexGrow": 1
+				},
+				"name": "locationIcon",
+				"parent": "tools",
+				"layout": {
+					"marginBottom": 0,
+					"marginRight": 0,
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignSelf": 4,
+					"positionType": 0,
+					"right": 0,
+					"bottom": 0,
+					"flexGrow": 1
+				},
+				"font": {},
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/currentLocation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "b68b2403",
+			"hiddenComponent": true,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 8
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"children": [],
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 8
+				},
+				"name": "leftSpace",
+				"parent": "mapPage",
+				"layout": {
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"flexGrow": 8
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "02a06fef",
+			"hiddenComponent": true,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"children": [],
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "rightSpage",
+				"parent": "mapPage",
+				"layout": {
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "16f37008",
+			"themeProps": {},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 3
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"children": [],
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 3
+				},
+				"name": "topSpace",
+				"parent": "tools",
+				"layout": {
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"flexGrow": 3
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "c97dd73b",
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"bottom": 0,
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0,
+					"flexDirection": "COLUMN"
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"bottom": 0,
+				"children": [
+					"searchBar",
+					"mapview"
+				],
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
+				},
+				"name": "mapContainer",
+				"parent": "mapPage",
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"top": 0,
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 1,
+					"right": 0,
+					"bottom": 0
+				},
+				"font": {}
+			}
+		},
+		{
 			"type": "MapView",
-			"id": "56b4f96f",
+			"id": "63545b87",
 			"themeProps": {},
 			"userProps": {
 				"left": 0,
@@ -122,9 +522,11 @@
 				"top": 0,
 				"bottom": 0,
 				"flexProps": {
-					"positionType": "ABSOLUTE",
+					"positionType": "RELATIVE",
 					"right": 0,
-					"bottom": 0
+					"bottom": 0,
+					"alignSelf": "STRETCH",
+					"flexGrow": 13
 				},
 				"layout": {},
 				"flex": {},
@@ -145,19 +547,20 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [],
 				"left": 0,
 				"right": 0,
 				"top": 0,
 				"bottom": 0,
+				"children": [],
 				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE",
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
 					"right": 0,
-					"bottom": 0
+					"bottom": 0,
+					"flexGrow": 13
 				},
 				"name": "mapview",
-				"parent": "mapPage",
+				"parent": "mapContainer",
 				"layout": {
 					"right": 0,
 					"bottom": 0,
@@ -166,63 +569,125 @@
 					"borderWidth": 0
 				},
 				"flex": {
-					"positionType": 1,
+					"alignSelf": 4,
+					"positionType": 0,
 					"right": 0,
-					"bottom": 0
+					"bottom": 0,
+					"flexGrow": 13
 				},
 				"font": {}
 			}
 		},
 		{
-			"type": "ImageView",
-			"id": "4263a0ec",
+			"type": "FlexLayout",
+			"id": "06d97085",
 			"themeProps": {},
 			"userProps": {
-				"image": "currentLocation.png",
-				"right": 0,
-				"bottom": 0,
-				"width": 200,
+				"width": null,
+				"height": null,
+				"minHeight": null,
 				"flexProps": {
-					"positionType": "ABSOLUTE"
+					"flexGrow": 1
 				},
 				"layout": {},
 				"flex": {},
 				"font": {},
 				"defaults": {}
 			},
-			"className": ".imageView",
+			"className": ".flexLayout",
 			"props": {
-				"width": 200,
-				"height": 200,
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
+				"backgroundColor": "#FFFFFF",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [],
-				"image": "currentLocation.png",
-				"right": 0,
-				"bottom": 0,
+				"minHeight": null,
+				"children": [
+					"searchview"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE"
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
-				"name": "locationIcon",
-				"parent": "mapPage",
+				"name": "searchBar",
+				"parent": "mapContainer",
 				"layout": {
-					"right": 0,
-					"bottom": 0,
-					"width": 200,
-					"height": 200,
 					"borderWidth": 0
 				},
 				"flex": {
-					"positionType": 1
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"flexGrow": 1
 				},
+				"font": {}
+			}
+		},
+		{
+			"type": "SearchView",
+			"id": "f6bdd7a0",
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"width": null,
+				"height": null,
+				"text": "Enter Location",
+				"textAlignment": "MIDLEFT",
+				"borderColor": "rgba( 0, 0, 0, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"layout": {},
+				"flex": {},
 				"font": {},
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/currentLocation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207?random=0.444163231192946"
+				"defaults": {}
+			},
+			"className": ".searchView",
+			"props": {
+				"text": "Enter Location",
+				"touchEnabled": true,
+				"width": null,
+				"height": null,
+				"visible": true,
+				"alpha": 1,
+				"borderColor": "rgba( 0, 0, 0, 0 )",
+				"borderWidth": 0,
+				"textAlignment": "MIDLEFT",
+				"minHeight": 30,
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"children": [],
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"input": {
+					"height": 28
+				},
+				"name": "searchview",
+				"parent": "searchBar",
+				"layout": {
+					"minHeight": 30,
+					"borderWidth": 0
+				},
+				"flex": {
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {}
 			}
 		}
 	]

@@ -23,9 +23,7 @@
 					"statusBar",
 					"headerBar",
 					"mapContainer",
-					"leftSpace",
-					"tools",
-					"rightSpage"
+					"locationIcon"
 				],
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -38,8 +36,8 @@
 				"parent": null,
 				"name": "mapPage",
 				"layout": {
-					"width": 375,
-					"height": 624.5999999999999
+					"width": 360,
+					"height": 558.4
 				},
 				"flex": {
 					"alignContent": 4,
@@ -49,8 +47,8 @@
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 375,
-				"height": 603
+				"width": 360,
+				"height": 558.4
 			}
 		},
 		{
@@ -75,12 +73,12 @@
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
-					"height": 20
+					"height": 25
 				},
 				"flex": {},
 				"font": {},
 				"flexProps": {},
-				"height": 20
+				"height": 25
 			}
 		},
 		{
@@ -109,330 +107,12 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"layout": {
-					"height": 44
+					"height": 56.6
 				},
 				"flex": {},
 				"font": {},
 				"flexProps": {},
-				"height": 44
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "6be20ec0",
-			"hiddenComponent": false,
-			"themeProps": {},
-			"userProps": {
-				"left": null,
-				"top": null,
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"right": null,
-				"bottom": null,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"right": 0,
-					"bottom": 0,
-					"flexGrow": 2,
-					"alignSelf": "STRETCH",
-					"flexDirection": "COLUMN",
-					"justifyContent": "FLEX_START",
-					"alignContent": "FLEX_START",
-					"alignItems": "FLEX_START"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": null,
-				"top": null,
-				"right": null,
-				"bottom": null,
-				"children": [
-					"topSpace",
-					"locationIcon"
-				],
-				"flexProps": {
-					"alignSelf": "STRETCH",
-					"direction": "INHERIT",
-					"alignContent": "FLEX_START",
-					"alignItems": "FLEX_START",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"right": 0,
-					"bottom": 0,
-					"flexGrow": 2
-				},
-				"name": "tools",
-				"parent": "mapPage",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 1,
-					"alignItems": 1,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"right": 0,
-					"bottom": 0,
-					"flexGrow": 2
-				},
-				"font": {}
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "6503e2fc",
-			"hiddenComponent": false,
-			"themeProps": {},
-			"userProps": {
-				"image": "currentLocation.png",
-				"right": null,
-				"bottom": null,
-				"width": null,
-				"left": null,
-				"top": null,
-				"height": null,
-				"imageFillType": "ASPECTFIT",
-				"marginRight": 0,
-				"marginBottom": 0,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"right": 0,
-					"bottom": 0,
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".imageView",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "currentLocation.png",
-				"right": null,
-				"bottom": null,
-				"left": null,
-				"top": null,
-				"marginRight": 0,
-				"marginBottom": 0,
-				"children": [],
-				"flexProps": {
-					"alignSelf": "STRETCH",
-					"positionType": "RELATIVE",
-					"right": 0,
-					"bottom": 0,
-					"flexGrow": 1
-				},
-				"name": "locationIcon",
-				"parent": "tools",
-				"layout": {
-					"marginBottom": 0,
-					"marginRight": 0,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"positionType": 0,
-					"right": 0,
-					"bottom": 0,
-					"flexGrow": 1
-				},
-				"font": {},
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/currentLocation.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "b68b2403",
-			"hiddenComponent": true,
-			"themeProps": {},
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"height": null,
-				"width": null,
-				"flexProps": {
-					"flexGrow": 8
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"children": [],
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 8
-				},
-				"name": "leftSpace",
-				"parent": "mapPage",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 8
-				},
-				"font": {}
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "02a06fef",
-			"hiddenComponent": true,
-			"themeProps": {},
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"height": null,
-				"width": null,
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"children": [],
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"name": "rightSpage",
-				"parent": "mapPage",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "16f37008",
-			"themeProps": {},
-			"userProps": {
-				"height": null,
-				"width": null,
-				"flexProps": {
-					"flexGrow": 3
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"children": [],
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 3
-				},
-				"name": "topSpace",
-				"parent": "tools",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 3
-				},
-				"font": {}
+				"height": 56.6
 			}
 		},
 		{
@@ -666,7 +346,7 @@
 				"borderColor": "rgba( 0, 0, 0, 0 )",
 				"borderWidth": 0,
 				"textAlignment": "MIDLEFT",
-				"minHeight": 30,
+				"minHeight": 42,
 				"backgroundColor": "rgba( 0, 0, 0, 0 )",
 				"children": [],
 				"flexProps": {
@@ -675,12 +355,12 @@
 					"flexGrow": 1
 				},
 				"input": {
-					"height": 28
+					"height": 42
 				},
 				"name": "searchview",
 				"parent": "searchBar",
 				"layout": {
-					"minHeight": 30,
+					"minHeight": 42,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -688,6 +368,82 @@
 					"flexGrow": 1
 				},
 				"font": {}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "db23fcba",
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"image": "currentLocation.png",
+				"right": 30,
+				"bottom": 30,
+				"width": 80,
+				"left": null,
+				"top": null,
+				"height": 80,
+				"imageFillType": "ASPECTFIT",
+				"marginRight": 0,
+				"marginBottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 30,
+					"bottom": 30,
+					"flexGrow": null,
+					"alignSelf": "FLEX_END"
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 80,
+				"height": 80,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"image": "currentLocation.png",
+				"right": 30,
+				"bottom": 30,
+				"left": null,
+				"top": null,
+				"marginRight": 0,
+				"marginBottom": 0,
+				"children": [],
+				"flexProps": {
+					"alignSelf": "FLEX_END",
+					"positionType": "ABSOLUTE",
+					"right": 30,
+					"bottom": 30,
+					"flexGrow": null
+				},
+				"name": "locationIcon",
+				"parent": "mapPage",
+				"layout": {
+					"right": 30,
+					"bottom": 30,
+					"marginBottom": 0,
+					"marginRight": 0,
+					"width": 80,
+					"height": 80,
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignSelf": 3,
+					"positionType": 1,
+					"right": 30,
+					"bottom": 30,
+					"flexGrow": null
+				},
+				"font": {},
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/currentLocation.png?os=Android&osVersion=7&density=577&densityRatio=0.25&zoomLevel=1&brandModel=Galaxy%20S7&resourceFolderOrder=drawable-xxxhdpi%2Cdrawable-xxhdpi%2Cdrawable-xhdpi%2Cdrawable-hdpi%2Cdrawable-mdpi%2Cdrawable-ldpi%2Cdrawable?random=0.6484288411007135"
 			}
 		}
 	]

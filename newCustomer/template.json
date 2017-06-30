@@ -1,0 +1,11 @@
+{
+  "name": "newCustomerPage",
+  "title": "New Customer Page",
+  "description": "",
+  "tags": [],
+  "resources": {
+    "fonts": [],
+    "images": ["emailIcon", "locationIcon", "phoneIcon", "userProfilePlaceholder"]
+  },
+  "version": "1.0.0"
+}

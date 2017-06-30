@@ -4,8 +4,8 @@
   "description": "Navigation Page",
   "tags": [],
   "resources": {
-    "fonts": ["Nunito"],
-    "images": ["sing_up_head_image"]
+    "fonts": [],
+    "images": ["currentLocation"]
   },
   "version": "1.0.0"
 }

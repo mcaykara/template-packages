@@ -6,7 +6,7 @@
 			"themeProps": {},
 			"userProps": {
 				"flexProps": {
-					"flexDirection": "ROW",
+					"flexDirection": "COLUMN",
 					"flexWrap": "WRAP"
 				},
 				"layout": {},

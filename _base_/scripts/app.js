@@ -19,6 +19,6 @@ stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 
 // Define routes and go to initial page of application
-Router.add("map", require("./ui/ui_mapPage"));
+Router.add("home", require("./ui/ui_homePage"));
 // Router.add("page2", require("./pages/page2"));
-Router.go("map");
+Router.go("home");

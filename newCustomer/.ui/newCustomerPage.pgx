@@ -19,6 +19,9 @@
 			"props": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"orientation": "PORTRAIT",
+				"paddingLeft": 20,
+				"paddingRight": 20,
+				"paddingTop": 20,
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -38,11 +41,8 @@
 				],
 				"parent": null,
 				"name": "newCustomerPage",
-				"width": 375,
-				"height": 603,
-				"paddingLeft": 20,
-				"paddingRight": 20,
-				"paddingTop": 20
+				"width": 281.25,
+				"height": 452.25
 			}
 		},
 		{
@@ -104,9 +104,16 @@
 					"flexWrap": "WRAP"
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "head",
-				"isReady": true,
+				"height": 125,
+				"width": 330,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -117,15 +124,7 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"height": 125,
-				"width": 330,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "head",
 				"parent": "newCustomerPage",
 				"children": [
 					"userIcon",
@@ -140,16 +139,11 @@
 			"userProps": {
 				"width": 100,
 				"height": 100,
-				"image": "userProfilePlaceholder.png",
+				"image": "user_profile_placeholder.png",
 				"imageFillType": "ASPECTFIT"
 			},
+			"className": ".imageView",
 			"props": {
-				"name": "userIcon",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"width": 100,
 				"height": 100,
 				"touchEnabled": true,
@@ -159,11 +153,15 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
+				"image": "user_profile_placeholder.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "userIcon",
 				"parent": "head",
 				"children": [],
-				"image": "userProfilePlaceholder.png",
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/userProfilePlaceholder.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207?random=0.9163395090751836"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/user_profile_placeholder.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207?random=0.8160089625170661"
 			}
 		},
 		{
@@ -178,9 +176,17 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "headInputs",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"paddingLeft": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -192,21 +198,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "headInputs",
 				"parent": "head",
 				"children": [
 					"nameInput",
 					"lastnameInput"
-				],
-				"paddingLeft": 10
+				]
 			}
 		},
 		{
@@ -221,9 +218,17 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "nameInput",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -235,21 +240,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "nameInput",
 				"parent": "headInputs",
 				"children": [
 					"nameText",
 					"line"
-				],
-				"marginLeft": null
+				]
 			}
 		},
 		{
@@ -262,13 +258,8 @@
 				"text": "Name",
 				"height": 60
 			},
+			"className": ".textBox",
 			"props": {
-				"name": "nameText",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"height": 60,
 				"width": null,
 				"touchEnabled": true,
@@ -286,6 +277,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "nameText",
 				"parent": "nameInput",
 				"children": []
 			}
@@ -299,9 +295,16 @@
 				"width": null,
 				"backgroundColor": "rgba( 192, 192, 192, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 192, 192, 192, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -312,15 +315,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 192, 192, 192, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line",
 				"parent": "nameInput",
 				"children": []
 			}
@@ -337,9 +332,17 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "lastnameInput",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -351,21 +354,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "lastnameInput",
 				"parent": "headInputs",
 				"children": [
 					"lastnameText",
 					"line_1"
-				],
-				"marginLeft": null
+				]
 			}
 		},
 		{
@@ -378,13 +372,8 @@
 				"text": "Lastname",
 				"height": 60
 			},
+			"className": ".textBox",
 			"props": {
-				"name": "lastnameText",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"height": 60,
 				"width": null,
 				"touchEnabled": true,
@@ -402,6 +391,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "lastnameText",
 				"parent": "lastnameInput",
 				"children": []
 			}
@@ -415,9 +409,16 @@
 				"width": null,
 				"backgroundColor": "rgba( 192, 192, 192, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_1",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 192, 192, 192, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -428,15 +429,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 192, 192, 192, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_1",
 				"parent": "lastnameInput",
 				"children": []
 			}
@@ -454,9 +447,18 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "emailInput",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": null,
+				"paddingLeft": 40,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -468,23 +470,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "emailInput",
 				"parent": "newCustomerPage",
 				"children": [
 					"emailText",
 					"line_1_1",
 					"emailIcon"
-				],
-				"marginLeft": null,
-				"paddingLeft": 40
+				]
 			}
 		},
 		{
@@ -497,13 +489,8 @@
 				"text": "Email",
 				"height": 60
 			},
+			"className": ".textBox",
 			"props": {
-				"name": "emailText",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"height": 60,
 				"width": null,
 				"touchEnabled": true,
@@ -521,6 +508,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "emailText",
 				"parent": "emailInput",
 				"children": []
 			}
@@ -534,9 +526,16 @@
 				"width": null,
 				"backgroundColor": "rgba( 192, 192, 192, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_1_1",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 192, 192, 192, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -547,15 +546,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 192, 192, 192, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_1_1",
 				"parent": "emailInput",
 				"children": []
 			}
@@ -567,19 +558,14 @@
 			"userProps": {
 				"width": 20,
 				"height": 60,
-				"image": "emailIcon.png",
+				"image": "email_icon.png",
 				"imageFillType": "ASPECTFIT",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
 				}
 			},
+			"className": ".imageView",
 			"props": {
-				"name": "emailIcon",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE"
-				},
 				"width": 20,
 				"height": 60,
 				"touchEnabled": true,
@@ -589,11 +575,15 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
+				"image": "email_icon.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE"
+				},
+				"name": "emailIcon",
 				"parent": "emailInput",
 				"children": [],
-				"image": "emailIcon.png",
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/emailIcon.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207?random=0.49545294958797026"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/email_icon.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207?random=0.7271011223975468"
 			}
 		},
 		{
@@ -609,9 +599,18 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "phoneInput",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": null,
+				"paddingLeft": 40,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -623,23 +622,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "phoneInput",
 				"parent": "newCustomerPage",
 				"children": [
 					"phoneText",
 					"line_1_1_1",
 					"phoneIcon"
-				],
-				"marginLeft": null,
-				"paddingLeft": 40
+				]
 			}
 		},
 		{
@@ -652,13 +641,8 @@
 				"text": "Phone",
 				"height": 60
 			},
+			"className": ".textBox",
 			"props": {
-				"name": "phoneText",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"height": 60,
 				"width": null,
 				"touchEnabled": true,
@@ -676,6 +660,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "phoneText",
 				"parent": "phoneInput",
 				"children": []
 			}
@@ -689,9 +678,16 @@
 				"width": null,
 				"backgroundColor": "rgba( 192, 192, 192, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_1_1_1",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 192, 192, 192, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -702,15 +698,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 192, 192, 192, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_1_1_1",
 				"parent": "phoneInput",
 				"children": []
 			}
@@ -722,19 +710,14 @@
 			"userProps": {
 				"width": 20,
 				"height": 60,
-				"image": "phoneIcon.png",
+				"image": "phone_icon.png",
 				"imageFillType": "ASPECTFIT",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
 				}
 			},
+			"className": ".imageView",
 			"props": {
-				"name": "phoneIcon",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE"
-				},
 				"width": 20,
 				"height": 60,
 				"touchEnabled": true,
@@ -744,11 +727,15 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
+				"image": "phone_icon.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE"
+				},
+				"name": "phoneIcon",
 				"parent": "phoneInput",
 				"children": [],
-				"image": "phoneIcon.png",
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/phoneIcon.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207?random=0.4831326804849674"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/phone_icon.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207?random=0.08547924019708675"
 			}
 		},
 		{
@@ -764,9 +751,18 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "addressInput",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": null,
+				"paddingLeft": 40,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -778,23 +774,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "addressInput",
 				"parent": "newCustomerPage",
 				"children": [
 					"addresstext",
 					"line_1_1_1_1",
 					"addressIcon"
-				],
-				"marginLeft": null,
-				"paddingLeft": 40
+				]
 			}
 		},
 		{
@@ -808,13 +794,8 @@
 				"height": 60,
 				"isPassword": false
 			},
+			"className": ".textBox",
 			"props": {
-				"name": "addresstext",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"height": 60,
 				"width": null,
 				"touchEnabled": true,
@@ -826,15 +807,20 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 82, 80, 80, 1 )",
 				"textAlignment": "MIDLEFT",
+				"isPassword": false,
 				"font": {
 					"size": 16,
 					"bold": false,
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "addresstext",
 				"parent": "addressInput",
-				"children": [],
-				"isPassword": false
+				"children": []
 			}
 		},
 		{
@@ -846,9 +832,16 @@
 				"width": null,
 				"backgroundColor": "rgba( 192, 192, 192, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_1_1_1_1",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 192, 192, 192, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -859,15 +852,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 192, 192, 192, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_1_1_1_1",
 				"parent": "addressInput",
 				"children": []
 			}
@@ -879,19 +864,14 @@
 			"userProps": {
 				"width": 20,
 				"height": 60,
-				"image": "locationIcon.png",
+				"image": "location_icon.png",
 				"imageFillType": "ASPECTFIT",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
 				}
 			},
+			"className": ".imageView",
 			"props": {
-				"name": "addressIcon",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE"
-				},
 				"width": 20,
 				"height": 60,
 				"touchEnabled": true,
@@ -901,11 +881,15 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
+				"image": "location_icon.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE"
+				},
+				"name": "addressIcon",
 				"parent": "addressInput",
 				"children": [],
-				"image": "locationIcon.png",
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/locationIcon.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207?random=0.3674007754365676"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/location_icon.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.75&brandModel=iPhone%207?random=0.7884749565877465"
 			}
 		},
 		{
@@ -919,9 +903,16 @@
 					"flexGrow": 3
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "flexlayout2",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -933,15 +924,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 3
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "flexlayout2",
 				"parent": "newCustomerPage",
 				"children": []
 			}

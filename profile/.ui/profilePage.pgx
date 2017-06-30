@@ -856,6 +856,7 @@
 				"width": null,
 				"height": 2,
 				"text": " ",
+				"visible": false,
 				"textColor": "rgba( 214, 103, 205, 1 )",
 				"backgroundColor": "rgba( 214, 103, 205, 1 )",
 				"flexProps": {
@@ -878,7 +879,7 @@
 				"height": 2,
 				"touchEnabled": true,
 				"text": " ",
-				"visible": true,
+				"visible": false,
 				"multiline": false,
 				"backgroundColor": "rgba( 214, 103, 205, 1 )",
 				"alpha": 1,
@@ -970,7 +971,7 @@
 				"width": null,
 				"height": null,
 				"textAlignment": "MIDCENTER",
-				"text": "1192",
+				"text": "866",
 				"flexProps": {
 					"flexGrow": 2
 				},
@@ -992,7 +993,7 @@
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
-				"text": "1192",
+				"text": "866",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "#FFFFFF",
@@ -1083,6 +1084,7 @@
 				"width": null,
 				"height": 2,
 				"text": " ",
+				"visible": false,
 				"textColor": "rgba( 214, 103, 205, 1 )",
 				"backgroundColor": "rgba( 214, 103, 205, 1 )",
 				"flexProps": {
@@ -1105,7 +1107,7 @@
 				"height": 2,
 				"touchEnabled": true,
 				"text": " ",
-				"visible": true,
+				"visible": false,
 				"multiline": false,
 				"backgroundColor": "rgba( 214, 103, 205, 1 )",
 				"alpha": 1,

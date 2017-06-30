@@ -1,7 +1,7 @@
 {
   "name": "loginPage",
-  "title": "Login page",
-  "description": "Login page",
+  "title": "Login Page",
+  "description": "Login Page",
   "tags": [],
   "resources": {
     "fonts": ["Nunito"]

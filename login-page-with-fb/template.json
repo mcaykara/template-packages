@@ -1,7 +1,7 @@
 {
   "name": "loginPageFB",
-  "title": "Login page with FB",
-  "description": "Login page with FB",
+  "title": "Login Page with FB",
+  "description": "Login Page with FB",
   "tags": [],
   "resources": {
     "fonts": ["Nunito"]

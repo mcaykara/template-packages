@@ -1,6 +1,6 @@
 {
-  "name": "%name%",
-  "title": "%title%",
+  "name": "settingsPage",
+  "title": "Settings Page",
   "description": "",
   "tags": [],
   "resources": {

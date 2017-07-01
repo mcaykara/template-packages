@@ -97,17 +97,18 @@
 			"id": "b26e0784",
 			"themeProps": {},
 			"userProps": {
-				"width": 330,
-				"height": 125,
+				"width": null,
+				"height": null,
 				"flexProps": {
 					"flexDirection": "ROW",
-					"flexWrap": "WRAP"
+					"flexWrap": "WRAP",
+					"flexGrow": 2
 				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 125,
-				"width": 330,
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#FFFFFF",
@@ -122,7 +123,8 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "WRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 2
 				},
 				"name": "head",
 				"parent": "newCustomerPage",

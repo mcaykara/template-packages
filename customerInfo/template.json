@@ -1,7 +1,7 @@
 {
-  "name": "%name%",
-  "title": "%title%",
-  "description": "",
+  "name": "customerInfo",
+  "title": "Customer Info Page",
+  "description": "Customer Info Page",
   "tags": [],
   "resources": {
     "fonts": [],

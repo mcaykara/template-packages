@@ -1,0 +1,68 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "d22e311e",
+			"themeProps": {},
+			"userProps": {},
+			"className": ".page",
+			"version": "6.3.19",
+			"props": {
+				"backgroundColor": "#EEEEEE",
+				"orientation": "PORTRAIT",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"parent": null,
+				"children": [
+					"statusBar",
+					"headerBar"
+				],
+				"name": "settingsPage",
+				"width": 187.5,
+				"height": 301.5
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "622a8f8b",
+			"themeProps": {},
+			"userProps": {},
+			"className": ".statusBar",
+			"props": {
+				"color": "#00A1F1",
+				"visible": true,
+				"parent": "settingsPage",
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"height": 20
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "a4ab1a70",
+			"themeProps": {},
+			"userProps": {
+				"title": "newPage001"
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "newPage001",
+				"titleColor": "#000000",
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"parent": "settingsPage",
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"height": 44
+			}
+		}
+	]
+}

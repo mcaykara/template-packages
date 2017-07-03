@@ -5,7 +5,7 @@
   "tags": [],
   "resources": {
     "fonts": [],
-    "images": ["emailIcon", "locationIcon", "phoneIcon", "userProfilePlaceholder"]
+    "images": ["email_icon", "location_icon", "phone_icon", "user_profile_placeholder"]
   },
   "version": "1.0.0"
 }

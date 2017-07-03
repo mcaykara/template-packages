@@ -5,7 +5,7 @@
   "tags": [],
   "resources": {
     "fonts": ["Nunito"],
-    "images": ["sing_up_head_image"]
+    "images": ["sign_up_head_image"]
   },
   "version": "1.0.0"
 }

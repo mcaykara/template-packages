@@ -5,7 +5,7 @@
   "tags": [],
   "resources": {
     "fonts": [],
-    "images": ["currentLocation"]
+    "images": ["current_location"]
   },
   "version": "1.0.0"
 }

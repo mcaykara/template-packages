@@ -15,6 +15,9 @@
 			"props": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"orientation": "PORTRAIT",
+				"paddingLeft": 20,
+				"paddingRight": 20,
+				"paddingTop": 30,
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -50,10 +53,7 @@
 				],
 				"name": "customerInfo",
 				"width": 375,
-				"height": 667,
-				"paddingLeft": 20,
-				"paddingRight": 20,
-				"paddingTop": 30
+				"height": 667
 			}
 		},
 		{
@@ -107,9 +107,18 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "head",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"maxHeight": 200,
+				"minHeight": 150,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -121,23 +130,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "head",
 				"parent": "customerInfo",
 				"children": [
 					"customerPhoto",
 					"fullname",
 					"title"
-				],
-				"maxHeight": 200,
-				"minHeight": 150
+				]
 			}
 		},
 		{
@@ -156,14 +155,8 @@
 					"flexGrow": 3
 				}
 			},
+			"className": ".imageView",
 			"props": {
-				"name": "customerPhoto",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "STRETCH",
-					"positionType": "RELATIVE",
-					"flexGrow": 3
-				},
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
@@ -173,12 +166,17 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
-				"parent": "head",
-				"children": [],
 				"minHeight": null,
 				"maxWidth": null,
-				"maxHeight": null
+				"maxHeight": null,
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE",
+					"flexGrow": 3
+				},
+				"name": "customerPhoto",
+				"parent": "head",
+				"children": []
 			}
 		},
 		{
@@ -197,14 +195,8 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "fullname",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
@@ -223,6 +215,12 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "fullname",
 				"parent": "head",
 				"children": []
 			}
@@ -245,14 +243,8 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "title",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
@@ -265,15 +257,21 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 77, 77, 77, 1 )",
 				"textAlignment": "TOPCENTER",
+				"left": 1,
 				"font": {
 					"size": 16,
 					"bold": false,
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "title",
 				"parent": "head",
-				"children": [],
-				"left": 1
+				"children": []
 			}
 		},
 		{
@@ -294,14 +292,8 @@
 					"size": 14
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "cutomerNumberLbl",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
@@ -314,15 +306,21 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 185, 185, 185, 1 )",
 				"textAlignment": "BOTTOMLEFT",
+				"marginTop": 2,
 				"font": {
 					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "cutomerNumberLbl",
 				"parent": "customerInfo",
-				"children": [],
-				"marginTop": 2
+				"children": []
 			}
 		},
 		{
@@ -334,9 +332,16 @@
 				"height": 1,
 				"backgroundColor": "rgba( 177, 177, 177, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 177, 177, 177, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -347,15 +352,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 177, 177, 177, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -369,9 +366,16 @@
 				"height": 1,
 				"backgroundColor": "rgba( 177, 177, 177, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_1",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 177, 177, 177, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -382,15 +386,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 177, 177, 177, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_1",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -406,13 +402,8 @@
 				"text": "7645980",
 				"textColor": "rgba( 82, 82, 82, 1 )"
 			},
+			"className": ".label",
 			"props": {
-				"name": "cutomerNumberText",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"width": null,
 				"height": 40,
 				"touchEnabled": true,
@@ -431,6 +422,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "cutomerNumberText",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -452,14 +448,8 @@
 					"size": 14
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "cutomernumberlbl_1",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"width": null,
 				"height": 30,
 				"touchEnabled": true,
@@ -478,6 +468,12 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "cutomernumberlbl_1",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -491,9 +487,16 @@
 				"height": 1,
 				"backgroundColor": "rgba( 177, 177, 177, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_1_1",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 177, 177, 177, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -504,15 +507,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 177, 177, 177, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_1_1",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -534,14 +529,8 @@
 					"size": 14
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "cutomernumberlbl_2",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"width": null,
 				"height": 30,
 				"touchEnabled": true,
@@ -560,6 +549,12 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "cutomernumberlbl_2",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -581,14 +576,8 @@
 					"size": 14
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "cutomernumberlbl_3",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"width": null,
 				"height": 30,
 				"touchEnabled": true,
@@ -607,6 +596,12 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "cutomernumberlbl_3",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -629,14 +624,8 @@
 					"size": 14
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "phoneLbl",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
@@ -649,15 +638,21 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 185, 185, 185, 1 )",
 				"textAlignment": "BOTTOMLEFT",
+				"marginTop": 2,
 				"font": {
 					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "phoneLbl",
 				"parent": "customerInfo",
-				"children": [],
-				"marginTop": 2
+				"children": []
 			}
 		},
 		{
@@ -671,13 +666,8 @@
 				"text": "+905337441232",
 				"textColor": "rgba( 82, 82, 82, 1 )"
 			},
+			"className": ".label",
 			"props": {
-				"name": "phoneText",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"width": null,
 				"height": 40,
 				"touchEnabled": true,
@@ -696,6 +686,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "phoneText",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -709,9 +704,16 @@
 				"height": 1,
 				"backgroundColor": "rgba( 177, 177, 177, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_2",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 177, 177, 177, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -722,15 +724,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 177, 177, 177, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_2",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -753,14 +747,8 @@
 					"size": 14
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "workPhoneLbl",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
@@ -773,15 +761,21 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 185, 185, 185, 1 )",
 				"textAlignment": "BOTTOMLEFT",
+				"marginTop": 2,
 				"font": {
 					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "workPhoneLbl",
 				"parent": "customerInfo",
-				"children": [],
-				"marginTop": 2
+				"children": []
 			}
 		},
 		{
@@ -795,13 +789,8 @@
 				"text": "+905337441232",
 				"textColor": "rgba( 82, 82, 82, 1 )"
 			},
+			"className": ".label",
 			"props": {
-				"name": "workPhoneText",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"width": null,
 				"height": 40,
 				"touchEnabled": true,
@@ -820,6 +809,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "workPhoneText",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -833,9 +827,16 @@
 				"height": 1,
 				"backgroundColor": "rgba( 177, 177, 177, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_3",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 177, 177, 177, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -846,15 +847,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 177, 177, 177, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_3",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -877,14 +870,8 @@
 					"size": 14
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "addressLbl",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
@@ -897,15 +884,21 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 185, 185, 185, 1 )",
 				"textAlignment": "BOTTOMLEFT",
+				"marginTop": 2,
 				"font": {
 					"size": 14,
 					"bold": false,
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "addressLbl",
 				"parent": "customerInfo",
-				"children": [],
-				"marginTop": 2
+				"children": []
 			}
 		},
 		{
@@ -919,13 +912,8 @@
 				"text": "PO Box 2364 Malta, NY 12030",
 				"textColor": "rgba( 82, 82, 82, 1 )"
 			},
+			"className": ".label",
 			"props": {
-				"name": "addressText",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"width": null,
 				"height": 40,
 				"touchEnabled": true,
@@ -944,6 +932,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "addressText",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -959,9 +952,18 @@
 				"marginLeft": -20,
 				"marginRight": -20
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_4",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 177, 177, 177, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": -20,
+				"marginRight": -20,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -972,19 +974,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 177, 177, 177, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_4",
 				"parent": "customerInfo",
-				"children": [],
-				"marginLeft": -20,
-				"marginRight": -20
+				"children": []
 			}
 		},
 		{
@@ -993,7 +985,7 @@
 			"themeProps": {},
 			"userProps": {
 				"width": null,
-				"height": null,
+				"height": 20,
 				"backgroundColor": "rgba( 233, 233, 233, 1 )",
 				"left": null,
 				"right": null,
@@ -1003,9 +995,20 @@
 					"alignSelf": "STRETCH"
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "section",
-				"isReady": true,
+				"height": 20,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 233, 233, 233, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": null,
+				"right": null,
+				"marginRight": -20,
+				"marginLeft": -20,
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -1016,21 +1019,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 20,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 233, 233, 233, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "section",
 				"parent": "customerInfo",
-				"children": [],
-				"left": null,
-				"right": null,
-				"marginRight": -20,
-				"marginLeft": -20
+				"children": []
 			}
 		},
 		{
@@ -1044,13 +1035,8 @@
 				"text": "Notes",
 				"textColor": "rgba( 82, 82, 82, 1 )"
 			},
+			"className": ".label",
 			"props": {
-				"name": "notesButton",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"width": null,
 				"height": 50,
 				"touchEnabled": true,
@@ -1069,6 +1055,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "notesButton",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -1082,9 +1073,16 @@
 				"height": 1,
 				"backgroundColor": "rgba( 177, 177, 177, 1 )"
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_5",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 177, 177, 177, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1095,15 +1093,7 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 177, 177, 177, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_5",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -1119,13 +1109,8 @@
 				"text": "Notification Flow",
 				"textColor": "rgba( 82, 82, 82, 1 )"
 			},
+			"className": ".label",
 			"props": {
-				"name": "notificationsButton",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"width": null,
 				"height": 50,
 				"touchEnabled": true,
@@ -1144,6 +1129,11 @@
 					"italic": false,
 					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "notificationsButton",
 				"parent": "customerInfo",
 				"children": []
 			}
@@ -1159,9 +1149,18 @@
 				"marginLeft": -20,
 				"marginRight": -20
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "line_4_1",
-				"isReady": true,
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 177, 177, 177, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": -20,
+				"marginRight": -20,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1172,19 +1171,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"height": 1,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 177, 177, 177, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "line_4_1",
 				"parent": "customerInfo",
-				"children": [],
-				"marginLeft": -20,
-				"marginRight": -20
+				"children": []
 			}
 		},
 		{
@@ -1204,9 +1193,20 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "section_1",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 233, 233, 233, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": null,
+				"right": null,
+				"marginRight": -20,
+				"marginLeft": -20,
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -1218,21 +1218,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": 20,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 233, 233, 233, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "section_1",
 				"parent": "customerInfo",
-				"children": [],
-				"left": null,
-				"right": null,
-				"marginRight": -20,
-				"marginLeft": -20
+				"children": []
 			}
 		}
 	]

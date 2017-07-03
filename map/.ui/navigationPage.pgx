@@ -324,7 +324,7 @@
 				"backgroundColor": "rgba( 0, 0, 0, 0 )",
 				"width": null,
 				"height": null,
-				"text": "Enter Location",
+				"text": "",
 				"textAlignment": "MIDLEFT",
 				"borderColor": "rgba( 0, 0, 0, 0 )",
 				"flexProps": {

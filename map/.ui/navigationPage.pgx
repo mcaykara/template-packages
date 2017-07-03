@@ -376,7 +376,7 @@
 			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
-				"image": "currentLocation.png",
+				"image": "current_location.png",
 				"right": 30,
 				"bottom": 30,
 				"width": 80,
@@ -409,7 +409,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"image": "currentLocation.png",
+				"image": "current_location.png",
 				"right": 30,
 				"bottom": 30,
 				"left": null,
@@ -443,7 +443,7 @@
 					"flexGrow": null
 				},
 				"font": {},
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/currentLocation.png?os=Android&osVersion=7&density=577&densityRatio=0.25&zoomLevel=1&brandModel=Galaxy%20S7&resourceFolderOrder=drawable-xxxhdpi%2Cdrawable-xxhdpi%2Cdrawable-xhdpi%2Cdrawable-hdpi%2Cdrawable-mdpi%2Cdrawable-ldpi%2Cdrawable?random=0.6484288411007135"
+				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/current_location.png?os=Android&osVersion=7&density=577&densityRatio=0.25&zoomLevel=1&brandModel=Galaxy%20S7&resourceFolderOrder=drawable-xxxhdpi%2Cdrawable-xxhdpi%2Cdrawable-xhdpi%2Cdrawable-hdpi%2Cdrawable-mdpi%2Cdrawable-ldpi%2Cdrawable?random=0.6484288411007135"
 			}
 		}
 	]

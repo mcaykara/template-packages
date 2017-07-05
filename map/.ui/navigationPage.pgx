@@ -15,16 +15,10 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.19",
+			"version": "6.3.21",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
-				"children": [
-					"statusBar",
-					"headerBar",
-					"mapContainer",
-					"locationIcon"
-				],
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -33,22 +27,16 @@
 					"flexWrap": "WRAP",
 					"justifyContent": "FLEX_START"
 				},
+				"children": [
+					"statusBar",
+					"headerBar",
+					"mapContainer",
+					"locationIcon"
+				],
 				"parent": null,
 				"name": "navigationPage",
-				"layout": {
-					"width": 360,
-					"height": 558.4
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"flexDirection": 2,
-					"flexWrap": 1,
-					"justifyContent": 0
-				},
-				"font": {},
-				"width": 360,
-				"height": 558.4
+				"width": 187.5,
+				"height": 301.5
 			}
 		},
 		{
@@ -72,13 +60,7 @@
 				"parent": "navigationPage",
 				"isRemovable": false,
 				"name": "statusBar",
-				"layout": {
-					"height": 25
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"height": 25
+				"height": 20
 			}
 		},
 		{
@@ -106,13 +88,7 @@
 				"parent": "navigationPage",
 				"isRemovable": false,
 				"name": "headerBar",
-				"layout": {
-					"height": 56.6
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"height": 56.6
+				"height": 44
 			}
 		},
 		{
@@ -132,11 +108,7 @@
 					"right": 0,
 					"bottom": 0,
 					"flexDirection": "COLUMN"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -152,10 +124,6 @@
 				"right": 0,
 				"top": 0,
 				"bottom": 0,
-				"children": [
-					"searchBar",
-					"mapview"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -168,26 +136,12 @@
 					"right": 0,
 					"bottom": 0
 				},
+				"children": [
+					"searchBar",
+					"mapview"
+				],
 				"name": "mapContainer",
-				"parent": "navigationPage",
-				"layout": {
-					"right": 0,
-					"bottom": 0,
-					"left": 0,
-					"top": 0,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1,
-					"right": 0,
-					"bottom": 0
-				},
-				"font": {}
+				"parent": "navigationPage"
 			}
 		},
 		{
@@ -231,7 +185,10 @@
 				"right": 0,
 				"top": 0,
 				"bottom": 0,
-				"children": [],
+				"centerLocation": {
+					"latitude": 40.7828647,
+					"longitude": -73.9675491
+				},
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
@@ -239,23 +196,9 @@
 					"bottom": 0,
 					"flexGrow": 13
 				},
+				"children": [],
 				"name": "mapview",
-				"parent": "mapContainer",
-				"layout": {
-					"right": 0,
-					"bottom": 0,
-					"left": 0,
-					"top": 0,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"positionType": 0,
-					"right": 0,
-					"bottom": 0,
-					"flexGrow": 13
-				},
-				"font": {}
+				"parent": "mapContainer"
 			}
 		},
 		{
@@ -285,9 +228,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"minHeight": null,
-				"children": [
-					"searchview"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -299,21 +239,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"searchview"
+				],
 				"name": "searchBar",
-				"parent": "mapContainer",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "mapContainer"
 			}
 		},
 		{
@@ -327,17 +257,18 @@
 				"text": "",
 				"textAlignment": "MIDLEFT",
 				"borderColor": "rgba( 0, 0, 0, 0 )",
+				"minHeight": 30,
+				"hint": "Enter Location",
 				"flexProps": {
 					"flexGrow": 1
 				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				"input": {
+					"height": 28
+				}
 			},
 			"className": ".searchView",
 			"props": {
-				"text": "Enter Location",
+				"text": "",
 				"touchEnabled": true,
 				"width": null,
 				"height": null,
@@ -346,28 +277,20 @@
 				"borderColor": "rgba( 0, 0, 0, 0 )",
 				"borderWidth": 0,
 				"textAlignment": "MIDLEFT",
-				"minHeight": 42,
+				"minHeight": 30,
 				"backgroundColor": "rgba( 0, 0, 0, 0 )",
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
 				"input": {
-					"height": 42
+					"height": 28
 				},
+				"children": [],
 				"name": "searchview",
 				"parent": "searchBar",
-				"layout": {
-					"minHeight": 42,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"hint": "Enter Location"
 			}
 		},
 		{
@@ -392,11 +315,7 @@
 					"bottom": 30,
 					"flexGrow": null,
 					"alignSelf": "FLEX_END"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
@@ -416,7 +335,6 @@
 				"top": null,
 				"marginRight": 0,
 				"marginBottom": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "FLEX_END",
 					"positionType": "ABSOLUTE",
@@ -424,26 +342,10 @@
 					"bottom": 30,
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "locationIcon",
 				"parent": "navigationPage",
-				"layout": {
-					"right": 30,
-					"bottom": 30,
-					"marginBottom": 0,
-					"marginRight": 0,
-					"width": 80,
-					"height": 80,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 3,
-					"positionType": 1,
-					"right": 30,
-					"bottom": 30,
-					"flexGrow": null
-				},
-				"font": {},
-				"imageURL": "https://ui-editor-r6-cenkce.c9users.io:8081/ui-editor/img/current_location.png?os=Android&osVersion=7&density=577&densityRatio=0.25&zoomLevel=1&brandModel=Galaxy%20S7&resourceFolderOrder=drawable-xxxhdpi%2Cdrawable-xxhdpi%2Cdrawable-xhdpi%2Cdrawable-hdpi%2Cdrawable-mdpi%2Cdrawable-ldpi%2Cdrawable?random=0.6484288411007135"
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/current_location.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.21246745980020942"
 			}
 		}
 	]

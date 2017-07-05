@@ -11,7 +11,7 @@
 				"paddingTop": 20
 			},
 			"className": ".page",
-			"version": "6.3.19",
+			"version": "6.3.21",
 			"props": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"orientation": "PORTRAIT",
@@ -38,8 +38,8 @@
 					"label2_1"
 				],
 				"name": "settingsPage",
-				"width": 375,
-				"height": 603
+				"width": 187.5,
+				"height": 301.5
 			}
 		},
 		{
@@ -220,7 +220,7 @@
 				"text": null,
 				"width": 30,
 				"height": 30,
-				"borderRadius": 8
+				"borderRadius": 5
 			},
 			"className": ".button",
 			"props": {
@@ -235,7 +235,7 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
-				"borderRadius": 8,
+				"borderRadius": 5,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -306,7 +306,7 @@
 				"text": null,
 				"width": 30,
 				"height": 30,
-				"borderRadius": 8,
+				"borderRadius": 5,
 				"backgroundColor": "rgba( 208, 2, 27, 1 )"
 			},
 			"className": ".button",
@@ -322,7 +322,7 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
-				"borderRadius": 8,
+				"borderRadius": 5,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -459,10 +459,10 @@
 			"id": "ee75d752",
 			"themeProps": {},
 			"userProps": {
-				"width": null,
-				"minHeight": null,
-				"minWidth": null,
-				"height": 31,
+				"width": 61,
+				"minHeight": 31,
+				"minWidth": 51,
+				"height": null,
 				"thumbOnColor": "rgba( 205, 95, 196, 1 )",
 				"toggleOnColor": "rgba( 255, 0, 237, 0.43 )",
 				"thumbOffColor": "rgba( 229, 174, 225, 1 )",
@@ -471,11 +471,15 @@
 				"toggle": true,
 				"flexProps": {
 					"alignSelf": "CENTER"
+				},
+				"input": {
+					"height": 31,
+					"width": 51
 				}
 			},
 			"className": ".switch",
 			"props": {
-				"width": null,
+				"width": 61,
 				"touchEnabled": true,
 				"toggle": true,
 				"thumbOnColor": "rgba( 205, 95, 196, 1 )",
@@ -488,19 +492,19 @@
 				"borderWidth": 0,
 				"minHeight": 31,
 				"minWidth": 51,
-				"height": 31,
+				"height": null,
 				"backgroundColor": "rgba( 0, 0, 0, 0 )",
 				"flexProps": {
 					"alignSelf": "CENTER",
 					"positionType": "RELATIVE"
 				},
-				"name": "switch1",
-				"parent": "notificationsRow",
-				"children": [],
 				"input": {
 					"height": 31,
 					"width": 51
-				}
+				},
+				"name": "switch1",
+				"parent": "notificationsRow",
+				"children": []
 			}
 		},
 		{
@@ -564,6 +568,7 @@
 				"textColor": "#000000",
 				"textAlignment": "MIDLEFT",
 				"marginTop": 40,
+				"htmlText": null,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -576,8 +581,7 @@
 				},
 				"name": "label2",
 				"parent": "settingsPage",
-				"children": [],
-				"htmlText": null
+				"children": []
 			}
 		},
 		{

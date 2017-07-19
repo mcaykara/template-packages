@@ -3,7 +3,10 @@
 		{
 			"type": "Page",
 			"id": "2205e251",
-			"themeProps": {},
+			"initialized": true,
+			"themeProps": {
+				"Page": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"paddingLeft": 20,
@@ -11,7 +14,7 @@
 				"paddingTop": 30
 			},
 			"className": ".page",
-			"version": "6.3.19",
+			"version": "6.4.2-rc.2",
 			"props": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"orientation": "PORTRAIT",
@@ -59,7 +62,9 @@
 		{
 			"type": "StatusBar",
 			"id": "c72ce7dd",
-			"themeProps": {},
+			"themeProps": {
+				"StatusBar": "Default"
+			},
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
@@ -75,7 +80,9 @@
 		{
 			"type": "HeaderBar",
 			"id": "eb810d3b",
-			"themeProps": {},
+			"themeProps": {
+				"HeaderBar": "Default"
+			},
 			"userProps": {
 				"title": "newPage001",
 				"visible": false
@@ -96,7 +103,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "3fba786b",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -142,7 +151,9 @@
 		{
 			"type": "ImageView",
 			"id": "d8b62b07",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"imageFillType": "ASPECTFIT",
@@ -150,6 +161,7 @@
 				"minHeight": null,
 				"maxWidth": null,
 				"maxHeight": null,
+				"image": "user_profile.png",
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"flexGrow": 3
@@ -176,13 +188,17 @@
 				},
 				"name": "customerPhoto",
 				"parent": "head",
-				"children": []
+				"children": [],
+				"image": "user_profile.png",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/user_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.8636845722704285"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "28fd935d",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"textAlignment": "MIDCENTER",
@@ -228,7 +244,9 @@
 		{
 			"type": "Label",
 			"id": "a8043798",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"textAlignment": "TOPCENTER",
@@ -277,7 +295,9 @@
 		{
 			"type": "Label",
 			"id": "8719e11d",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 20,
@@ -326,7 +346,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "a4049e86",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -360,7 +382,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "6e2dfece",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -395,7 +419,9 @@
 			"type": "Label",
 			"id": "fa56dbff",
 			"hiddenComponent": false,
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 40,
@@ -434,7 +460,9 @@
 		{
 			"type": "Label",
 			"id": "d7bbb0a1",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 20,
@@ -484,7 +512,9 @@
 			"type": "Label",
 			"id": "236c031b",
 			"hiddenComponent": false,
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 40,
@@ -523,7 +553,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "7752b036",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -557,7 +589,9 @@
 		{
 			"type": "Label",
 			"id": "fc583efa",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 20,
@@ -607,7 +641,9 @@
 			"type": "Label",
 			"id": "2d5de946",
 			"hiddenComponent": false,
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 40,
@@ -646,7 +682,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "5a7345d5",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -680,7 +718,9 @@
 		{
 			"type": "Label",
 			"id": "53eac084",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 20,
@@ -730,7 +770,9 @@
 			"type": "Label",
 			"id": "ab9f1b7d",
 			"hiddenComponent": false,
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 40,
@@ -769,7 +811,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "94a16632",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -807,7 +851,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "dddaeeac",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 20,
@@ -853,7 +899,9 @@
 			"type": "Label",
 			"id": "3b5cbff1",
 			"hiddenComponent": false,
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 50,
@@ -892,7 +940,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "2725fcd8",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -927,7 +977,9 @@
 			"type": "Label",
 			"id": "6e040dbd",
 			"hiddenComponent": false,
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 50,
@@ -966,7 +1018,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "dcb51b88",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": 1,
@@ -1004,7 +1058,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "c420e187",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": null,

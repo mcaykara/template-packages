@@ -3,7 +3,7 @@
 		{
 			"type": "Page",
 			"id": "2205e251",
-			"initialized": true,
+			"initialized": false,
 			"themeProps": {
 				"Page": "Default"
 			},

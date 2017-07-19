@@ -215,11 +215,8 @@
 			"userProps": {
 				"width": 132,
 				"height": 90,
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"image": "user_profile.png",
+				"imageFillType": "ASPECTFIT"
 			},
 			"className": ".imageView",
 			"props": {
@@ -227,7 +224,7 @@
 				"height": 90,
 				"touchEnabled": true,
 				"visible": true,
-				"imageFillType": "NORMAL",
+				"imageFillType": "ASPECTFIT",
 				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -238,7 +235,9 @@
 				},
 				"children": [],
 				"name": "headerText",
-				"parent": "loginPageHeader"
+				"parent": "loginPageHeader",
+				"image": "user_profile.png",
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/user_profile.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.0352560211573556"
 			}
 		},
 		{

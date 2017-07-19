@@ -3,6 +3,7 @@
 		{
 			"type": "Page",
 			"id": "9e906df0",
+			"initialized": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
@@ -188,6 +189,7 @@
 			"userProps": {
 				"height": null,
 				"imageFillType": "ASPECTFIT",
+				"image": "user_profile.png",
 				"width": null,
 				"flexProps": {
 					"alignSelf": "STRETCH",
@@ -205,6 +207,7 @@
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
+				"image": "user_profile.png",
 				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",

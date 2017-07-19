@@ -3,7 +3,10 @@
 		{
 			"type": "Page",
 			"id": "5e704510",
-			"themeProps": {},
+			"initialized": false,
+			"themeProps": {
+				"Page": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 238, 238, 238, 1 )",
 				"paddingLeft": 20,
@@ -20,7 +23,7 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.19",
+			"version": "6.4.2-rc.2",
 			"props": {
 				"backgroundColor": "rgba( 238, 238, 238, 1 )",
 				"orientation": "PORTRAIT",
@@ -47,14 +50,16 @@
 				],
 				"parent": null,
 				"name": "loginPageFB",
-				"width": 320,
-				"height": 568
+				"width": 187.5,
+				"height": 333.5
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "51e51ff5",
-			"themeProps": {},
+			"themeProps": {
+				"StatusBar": "Default"
+			},
 			"userProps": {
 				"layout": {},
 				"flex": {},
@@ -76,7 +81,9 @@
 		{
 			"type": "HeaderBar",
 			"id": "d04ddbc4",
-			"themeProps": {},
+			"themeProps": {
+				"HeaderBar": "Default"
+			},
 			"userProps": {
 				"title": "Login",
 				"visible": false,
@@ -102,7 +109,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "86aede7f",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -147,7 +156,9 @@
 		{
 			"type": "Label",
 			"id": "24b17d08",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textAlignment": "MIDCENTER",
@@ -198,7 +209,9 @@
 		{
 			"type": "ImageView",
 			"id": "36d35caa",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"width": 132,
 				"height": 90,
@@ -231,7 +244,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "6f575a24",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"width": null,
@@ -251,6 +266,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"maxHeight": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -268,17 +284,18 @@
 					"userNameLine"
 				],
 				"name": "userName",
-				"parent": "loginPageFB",
-				"maxHeight": null
+				"parent": "loginPageFB"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "3841b369",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"height": 21,
-				"width": 334,
+				"width": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textAlignment": "MIDLEFT",
 				"textColor": "rgba( 160, 160, 160, 1 )",
@@ -288,15 +305,11 @@
 					"family": "Nunito",
 					"bold": false,
 					"italic": false
-				},
-				"layout": {},
-				"flex": {},
-				"flexProps": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label",
 			"props": {
-				"width": 334,
+				"width": null,
 				"height": 21,
 				"touchEnabled": true,
 				"text": "USERNAME",
@@ -326,9 +339,11 @@
 		{
 			"type": "TextBox",
 			"id": "7006c86d",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
-				"width": 334,
+				"width": null,
 				"height": 40,
 				"text": "annamiracle@template.com",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -336,16 +351,12 @@
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"font": {
 					"family": "Nunito"
-				},
-				"layout": {},
-				"flex": {},
-				"flexProps": {},
-				"defaults": {}
+				}
 			},
 			"className": ".textBox",
 			"props": {
 				"height": 40,
-				"width": 334,
+				"width": null,
 				"touchEnabled": true,
 				"text": "annamiracle@template.com",
 				"visible": true,
@@ -373,7 +384,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "fffd573a",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"borderWidth": 0,
 				"backgroundColor": "rgba( 226, 226, 226, 1 )",
@@ -414,7 +427,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "7bba29b4",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"width": null,
@@ -463,10 +478,12 @@
 		{
 			"type": "Label",
 			"id": "84ef5004",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"height": 21,
-				"width": 334,
+				"width": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textAlignment": "MIDLEFT",
 				"textColor": "rgba( 160, 160, 160, 1 )",
@@ -474,15 +491,11 @@
 				"font": {
 					"size": 16,
 					"family": "Nunito"
-				},
-				"layout": {},
-				"flex": {},
-				"flexProps": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label",
 			"props": {
-				"width": 334,
+				"width": null,
 				"height": 21,
 				"touchEnabled": true,
 				"text": "PASSWORD",
@@ -512,9 +525,11 @@
 		{
 			"type": "TextBox",
 			"id": "8ec0c0ba",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
-				"width": 334,
+				"width": null,
 				"height": 40,
 				"text": "12345",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -524,16 +539,12 @@
 				"isPassword": true,
 				"font": {
 					"family": "Nunito"
-				},
-				"layout": {},
-				"flex": {},
-				"flexProps": {},
-				"defaults": {}
+				}
 			},
 			"className": ".textBox",
 			"props": {
 				"height": 40,
-				"width": 334,
+				"width": null,
 				"touchEnabled": true,
 				"text": "12345",
 				"visible": true,
@@ -563,7 +574,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "c0ce3847",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"borderWidth": 0,
 				"backgroundColor": "rgba( 226, 226, 226, 1 )",
@@ -604,7 +617,9 @@
 		{
 			"type": "FlexLayout",
 			"id": "0335728c",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"width": null,
@@ -648,7 +663,9 @@
 		{
 			"type": "Label",
 			"id": "51351398",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"height": 20,
@@ -698,7 +715,9 @@
 		{
 			"type": "Label",
 			"id": "ca6dde90",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"height": 20,
@@ -750,7 +769,9 @@
 			"type": "Label",
 			"id": "a355399e",
 			"hiddenComponent": false,
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default"
+			},
 			"userProps": {
 				"top": -30,
 				"width": 120,
@@ -803,7 +824,10 @@
 		{
 			"type": "Button",
 			"id": "1de2cd49",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default",
+				"Highlights": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 54, 134, 255, 1 )",
 				"width": null,
@@ -831,6 +855,7 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
+				"marginBottom": 5,
 				"font": {
 					"size": 16,
 					"bold": true,
@@ -844,14 +869,16 @@
 				},
 				"children": [],
 				"name": "loginbutton",
-				"parent": "loginPageFB",
-				"marginBottom": 5
+				"parent": "loginPageFB"
 			}
 		},
 		{
 			"type": "Button",
 			"id": "772e3345",
-			"themeProps": {},
+			"themeProps": {
+				"Sizes": "Default",
+				"Highlights": "Default"
+			},
 			"userProps": {
 				"backgroundColor": "rgba( 54, 134, 255, 1 )",
 				"width": null,

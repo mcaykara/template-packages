@@ -3,6 +3,7 @@
 		{
 			"type": "Page",
 			"id": "5e704510",
+			"initialized": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 238, 238, 238, 1 )",

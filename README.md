@@ -6,7 +6,7 @@ Smartface UI-Editor template packages
   . link.sh {existing_package_name}
 ```
 
-### To create new theme
+### To create a new theme
 ```sh
   . new.sh {new_package_name}
 ```

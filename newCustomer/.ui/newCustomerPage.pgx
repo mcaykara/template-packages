@@ -16,7 +16,7 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.4.5-rc.1",
+			"version": "6.6.1",
 			"props": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"paddingLeft": 20,

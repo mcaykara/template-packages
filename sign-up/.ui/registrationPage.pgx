@@ -3,7 +3,7 @@
 		{
 			"className": ".page",
 			"id": "3366-28b7-0fa2-992b",
-			"initialized": true,
+			"initialized": false,
 			"props": {
 				"children": [
 					"05dc-5eb7-a5fc-5933",

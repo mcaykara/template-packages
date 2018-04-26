@@ -41,7 +41,7 @@
 				"paddingTop": 20,
 				"top": null
 			},
-			"version": "6.6.1"
+			"version": "6.6.5"
 		},
 		{
 			"className": ".statusBar",

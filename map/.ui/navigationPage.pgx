@@ -16,7 +16,7 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.6.1",
+			"version": "6.6.5",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"flexProps": {

@@ -19,7 +19,7 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.6.5",
+			"version": "6.7.0",
 			"props": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"flexProps": {
@@ -489,7 +489,7 @@
 			}
 		},
 		{
-			"type": "Label",
+			"type": "TextView",
 			"id": "4237-9f0f-0c6f-3472",
 			"themeProps": {
 				"Sizes": "Default"
@@ -510,7 +510,7 @@
 				"flex": {},
 				"defaults": {}
 			},
-			"className": ".label",
+			"className": ".textView",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -689,7 +689,7 @@
 			}
 		},
 		{
-			"type": "Label",
+			"type": "TextView",
 			"id": "c565-7e2a-74f2-faec",
 			"themeProps": {
 				"Sizes": "Default"
@@ -710,7 +710,7 @@
 				"flex": {},
 				"defaults": {}
 			},
-			"className": ".label",
+			"className": ".textView",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -890,7 +890,7 @@
 			}
 		},
 		{
-			"type": "Label",
+			"type": "TextView",
 			"id": "d9e4-0256-f4bd-fb5f",
 			"themeProps": {
 				"Sizes": "Default"
@@ -911,7 +911,7 @@
 				"flex": {},
 				"defaults": {}
 			},
-			"className": ".label",
+			"className": ".textView",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,
@@ -1134,7 +1134,7 @@
 			}
 		},
 		{
-			"type": "Label",
+			"type": "TextView",
 			"id": "74ef-cea5-7f6b-b32e",
 			"themeProps": {
 				"Sizes": "Default"
@@ -1153,7 +1153,7 @@
 				"flexProps": {},
 				"defaults": {}
 			},
-			"className": ".label",
+			"className": ".textView",
 			"props": {
 				"touchEnabled": true,
 				"visible": true,

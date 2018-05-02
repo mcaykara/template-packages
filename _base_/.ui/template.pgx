@@ -16,7 +16,7 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.6.5",
+			"version": "6.7.0",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",

@@ -34,7 +34,7 @@
 				"paddingLeft": 20,
 				"paddingRight": 20
 			},
-			"version": "6.6.5"
+			"version": "6.7.0"
 		},
 		{
 			"className": ".statusBar",
@@ -463,7 +463,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".textView",
 			"hiddenComponent": false,
 			"id": "49c0-d2b5-ac3e-e1c2",
 			"props": {
@@ -472,7 +472,7 @@
 				"parent": "3e72-58b3-502c-4a81",
 				"text": "Forgot Password"
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"defaults": {},

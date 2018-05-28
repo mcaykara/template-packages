@@ -94,6 +94,12 @@
 				"textColor": "rgba( 66, 66, 66, 1 )",
 				"flexProps": {
 					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				}
 			},
 			"className": ".label",
@@ -139,7 +145,13 @@
 				"text": null,
 				"width": 30,
 				"height": 30,
-				"borderRadius": 5
+				"borderRadius": 5,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			},
 			"className": ".button",
 			"props": {
@@ -184,7 +196,13 @@
 				"width": 30,
 				"height": 30,
 				"borderRadius": 5,
-				"backgroundColor": "rgba( 208, 2, 27, 1 )"
+				"backgroundColor": "rgba( 208, 2, 27, 1 )",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			},
 			"className": ".button",
 			"props": {
@@ -241,6 +259,12 @@
 				"textColor": "rgba( 66, 66, 66, 1 )",
 				"flexProps": {
 					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				}
 			},
 			"className": ".label",
@@ -264,7 +288,7 @@
 				"thumbOffColor": "rgba( 229, 174, 225, 1 )",
 				"backgroundColor": "rgba( 0, 0, 0, 0 )",
 				"toggleOffColor": "rgba( 229, 174, 225, 0.54 )",
-				"toggle": true,
+				"toggle": false,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},
@@ -305,7 +329,13 @@
 				"width": 242,
 				"height": 37,
 				"multiline": false,
-				"htmlText": null
+				"htmlText": null,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			},
 			"className": ".label",
 			"props": {
@@ -327,7 +357,10 @@
 				"textAlignment": "TOPLEFT",
 				"textColor": "rgba( 160, 160, 160, 1 )",
 				"font": {
-					"size": 14
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				}
 			},
 			"className": ".textView",

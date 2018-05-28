@@ -1,6 +1,5 @@
 {
-	"components": [
-		{
+	"components": [{
 			"className": ".page",
 			"id": "f103-739d-f984-c6b2",
 			"initialized": false,
@@ -132,7 +131,10 @@
 					"flexGrow": 1
 				},
 				"font": {
-					"size": 22
+					"size": 22,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				},
 				"height": null,
 				"text": "Adam Stewart",
@@ -155,7 +157,10 @@
 					"flexGrow": 1
 				},
 				"font": {
-					"size": 16
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				},
 				"height": null,
 				"left": 1,
@@ -180,7 +185,10 @@
 					"flexGrow": null
 				},
 				"font": {
-					"size": 14
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				},
 				"height": 20,
 				"marginTop": 2,
@@ -235,7 +243,13 @@
 				"height": 40,
 				"text": "7645980",
 				"textColor": "rgba( 82, 82, 82, 1 )",
-				"width": null
+				"width": null,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			}
 		},
 		{
@@ -253,7 +267,10 @@
 					"flexGrow": null
 				},
 				"font": {
-					"size": 14
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				},
 				"height": 20,
 				"marginTop": 2,
@@ -278,7 +295,13 @@
 				"height": 40,
 				"text": "+905337441232",
 				"textColor": "rgba( 82, 82, 82, 1 )",
-				"width": null
+				"width": null,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			}
 		},
 		{
@@ -311,7 +334,10 @@
 					"flexGrow": null
 				},
 				"font": {
-					"size": 14
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				},
 				"height": 20,
 				"marginTop": 2,
@@ -336,7 +362,13 @@
 				"height": 40,
 				"text": "+905337441232",
 				"textColor": "rgba( 82, 82, 82, 1 )",
-				"width": null
+				"width": null,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			}
 		},
 		{
@@ -369,7 +401,10 @@
 					"flexGrow": null
 				},
 				"font": {
-					"size": 14
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
 				},
 				"height": 20,
 				"marginTop": 2,
@@ -394,7 +429,13 @@
 				"height": 40,
 				"text": "PO Box 2364 Malta, NY 12030",
 				"textColor": "rgba( 82, 82, 82, 1 )",
-				"width": null
+				"width": null,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			}
 		},
 		{
@@ -451,7 +492,13 @@
 				"height": 50,
 				"text": "Notes",
 				"textColor": "rgba( 82, 82, 82, 1 )",
-				"width": null
+				"width": null,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			}
 		},
 		{
@@ -484,7 +531,13 @@
 				"height": 50,
 				"text": "Notification Flow",
 				"textColor": "rgba( 82, 82, 82, 1 )",
-				"width": null
+				"width": null,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				}
 			}
 		},
 		{

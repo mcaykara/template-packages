@@ -26,7 +26,7 @@
 				"font": {},
 				"layout": {}
 			},
-			"version": "6.8.0"
+			"version": "6.10.0"
 		},
 		{
 			"className": ".statusBar",

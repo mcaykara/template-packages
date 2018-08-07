@@ -12,7 +12,7 @@
 				"paddingTop": 20
 			},
 			"className": ".page",
-			"version": "6.8.0",
+			"version": "6.10.0",
 			"props": {
 				"parent": null,
 				"children": [

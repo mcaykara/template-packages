@@ -1,0 +1,26 @@
+{
+	"assets": [
+		{
+			"name": "navigationPage",
+			"tags": [],
+			"resources": {
+				"fonts": [],
+				"images": [
+					"current_location"
+				]
+			},
+			"previewPath": "preview/navigationPage.png",
+			"viewPath": ".ui/navigationPage.pgx"
+		}
+	],
+	"name": "navigationpage",
+	"type": "page",
+	"title": "Navigation Page",
+	"description": "Navigation Page",
+	"author": "info@smartface.io",
+	"imagesPath": [
+		"preview/navigationPage.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}

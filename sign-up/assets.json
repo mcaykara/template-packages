@@ -1,0 +1,28 @@
+{
+	"assets": [
+		{
+			"name": "registrationPage",
+			"tags": [],
+			"resources": {
+				"fonts": [
+					"Nunito"
+				],
+				"images": [
+					"sign_up_head_image"
+				]
+			},
+			"previewPath": "preview/registrationPage.png",
+			"viewPath": ".ui/registrationPage.pgx"
+		}
+	],
+	"name": "registrationpage",
+	"type": "page",
+	"title": "Registration Page",
+	"description": "Registration Page",
+	"author": "info@smartface.io",
+	"imagesPath": [
+		"preview/registrationPage.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}

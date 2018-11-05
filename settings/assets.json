@@ -1,0 +1,24 @@
+{
+	"assets": [
+		{
+			"name": "settingsPage",
+			"tags": [],
+			"resources": {
+				"fonts": [],
+				"images": []
+			},
+			"previewPath": "preview/settingsPage.png",
+			"viewPath": ".ui/settingsPage.pgx"
+		}
+	],
+	"name": "settingspage",
+	"type": "page",
+	"title": "Settings Page",
+	"description": "",
+	"author": "info@smartface.io",
+	"imagesPath": [
+		"preview/settingsPage.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}

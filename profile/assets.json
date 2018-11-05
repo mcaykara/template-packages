@@ -1,0 +1,27 @@
+{
+	"assets": [
+		{
+			"name": "profilePage",
+			"tags": [],
+			"resources": {
+				"fonts": [],
+				"images": [
+					"right_arrow",
+					"user_profile"
+				]
+			},
+			"previewPath": "preview/profilePage.png",
+			"viewPath": ".ui/profilePage.pgx"
+		}
+	],
+	"name": "profilepage",
+	"type": "page",
+	"title": "Profile Page",
+	"description": "Profile Page",
+	"author": "info@smartface.io",
+	"imagesPath": [
+		"preview/profilePage.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}

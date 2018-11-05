@@ -1,0 +1,28 @@
+{
+	"assets": [
+		{
+			"name": "loginPageFB",
+			"tags": [],
+			"resources": {
+				"fonts": [
+					"Nunito"
+				],
+				"images": [
+					"user_profile"
+				]
+			},
+			"previewPath": "preview/loginPageFB.png",
+			"viewPath": ".ui/loginPageFB.pgx"
+		}
+	],
+	"name": "loginpagefb",
+	"type": "page",
+	"title": "Login Page with FB",
+	"description": "Login Page with FB",
+	"author": "info@smartface.io",
+	"imagesPath": [
+		"preview/loginPageFB.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}

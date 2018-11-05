@@ -1,0 +1,28 @@
+{
+	"assets": [
+		{
+			"name": "loginPage",
+			"tags": [],
+			"resources": {
+				"fonts": [
+					"Nunito"
+				],
+				"images": [
+					"user_profile"
+				]
+			},
+			"previewPath": "preview/loginPage.png",
+			"viewPath": ".ui/loginPage.pgx"
+		}
+	],
+	"name": "loginpage",
+	"type": "page",
+	"title": "Login Page",
+	"description": "Login Page",
+	"author": "info@smartface.io",
+	"imagesPath": [
+		"preview/loginPage.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}

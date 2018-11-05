@@ -1,0 +1,26 @@
+{
+	"assets": [
+		{
+			"name": "customerInfo",
+			"tags": [],
+			"resources": {
+				"fonts": [],
+				"images": [
+					"user_profile"
+				]
+			},
+			"previewPath": "preview/customerInfo.png",
+			"viewPath": ".ui/customerInfo.pgx"
+		}
+	],
+	"name": "customerinfo",
+	"type": "page",
+	"title": "Customer Info Page",
+	"description": "Customer Info Page",
+	"author": "info@smartface.io",
+	"imagesPath": [
+		"preview/customerInfo.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}

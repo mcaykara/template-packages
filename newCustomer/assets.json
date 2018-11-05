@@ -1,0 +1,29 @@
+{
+	"assets": [
+		{
+			"name": "newCustomerPage",
+			"tags": [],
+			"resources": {
+				"fonts": [],
+				"images": [
+					"email_icon",
+					"location_icon",
+					"phone_icon",
+					"user_profile_placeholder"
+				]
+			},
+			"previewPath": "preview/newCustomerPage.png",
+			"viewPath": ".ui/newCustomerPage.pgx"
+		}
+	],
+	"name": "newcustomerpage",
+	"type": "page",
+	"title": "New Customer Page",
+	"description": "",
+	"author": "info@smartface.io",
+	"imagesPath": [
+		"preview/newCustomerPage.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}

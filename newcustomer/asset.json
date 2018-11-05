@@ -21,7 +21,7 @@
 	"title": "New Customer Page",
 	"description": "",
 	"author": "info@smartface.io",
-	"imagesPath": [
+	"imagePaths": [
 		"preview/newCustomerPage.png"
 	],
 	"version": "1.0.0",

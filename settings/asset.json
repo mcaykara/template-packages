@@ -16,7 +16,7 @@
 	"title": "Settings Page",
 	"description": "",
 	"author": "info@smartface.io",
-	"imagesPath": [
+	"imagePaths": [
 		"preview/settingsPage.png"
 	],
 	"version": "1.0.0",

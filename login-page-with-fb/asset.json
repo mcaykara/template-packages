@@ -20,7 +20,7 @@
 	"title": "Login Page with FB",
 	"description": "Login Page with FB",
 	"author": "info@smartface.io",
-	"imagesPath": [
+	"imagePaths": [
 		"preview/loginPageFB.png"
 	],
 	"version": "1.0.0",

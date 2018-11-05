@@ -19,7 +19,7 @@
 	"title": "Profile Page",
 	"description": "Profile Page",
 	"author": "info@smartface.io",
-	"imagesPath": [
+	"imagePaths": [
 		"preview/profilePage.png"
 	],
 	"version": "1.0.0",

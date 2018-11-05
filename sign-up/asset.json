@@ -20,7 +20,7 @@
 	"title": "Registration Page",
 	"description": "Registration Page",
 	"author": "info@smartface.io",
-	"imagesPath": [
+	"imagePaths": [
 		"preview/registrationPage.png"
 	],
 	"version": "1.0.0",

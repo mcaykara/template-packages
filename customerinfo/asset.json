@@ -1,4 +1,5 @@
 {
+	"name": "customerinfo",
 	"assets": [
 		{
 			"name": "customerInfo",
@@ -13,12 +14,11 @@
 			"viewPath": ".ui/customerInfo.pgx"
 		}
 	],
-	"name": "customerinfo",
 	"type": "page",
 	"title": "Customer Info Page",
 	"description": "Customer Info Page",
 	"author": "info@smartface.io",
-	"imagesPath": [
+	"imagePaths": [
 		"preview/customerInfo.png"
 	],
 	"version": "1.0.0",

@@ -18,7 +18,7 @@
 	"title": "Navigation Page",
 	"description": "Navigation Page",
 	"author": "info@smartface.io",
-	"imagesPath": [
+	"imagePaths": [
 		"preview/navigationPage.png"
 	],
 	"version": "1.0.0",
